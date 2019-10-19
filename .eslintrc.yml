@@ -1,7 +1,7 @@
 env: {node: true}
 extends: ['eslint:recommended', 'plugin:node/recommended', 'plugin:security/recommended',
   'plugin:jest/recommended', 'plugin:sonarjs/recommended']
-parserOptions: {ecmaVersion: 2018}
+parserOptions: {ecmaVersion: 2019}
 plugins: [sonarjs, jest]
 rules:
   complexity: [warn, 5]
@@ -17,6 +17,7 @@ rules:
   max-lines-per-function: [warn, 40]
   max-nested-callbacks: [warn, 2]
   no-console: warn
+  # no-lonely-if: error
   no-multi-assign: warn
   no-multi-spaces: warn
   no-multi-str: warn
