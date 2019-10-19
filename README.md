@@ -1,4 +1,4 @@
-# An opinionated linter based on ESLint
+# An opinionated ESLint configuration
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/npm/v/eslint-config-node-opinionated.svg?style=flat-square)](https://npmjs.com/package/eslint-config-node-opinionated)
