@@ -50,8 +50,8 @@ module.exports = {
       }
     ],
     'no-nested-ternary': 'warn',
-    'no-new-function': 'warn',
-    'no-new-wrapper': 'warn',
+    'no-new-func': 'warn',
+    'no-new-wrappers': 'warn',
     'no-path-concat': 'warn',
     'no-process-exit': 'warn',
     'no-proto': 'warn',
