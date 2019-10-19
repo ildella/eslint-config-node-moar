@@ -22,9 +22,7 @@
   },
   "devDependencies": {
     "eslint": "5.16.0",
-    "jest": "24.9.0",
-    "js-yaml": "3.13.1",
-    "stream-mock": "2.0.5"
+    "jest": "24.9.0"
   },
   "dependencies": {
     "eslint-plugin-jest": "22.19.0",

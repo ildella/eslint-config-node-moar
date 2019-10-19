@@ -1,4 +1,3 @@
-// manually generated until I can make the on-the-fly conversion from YAML work
 module.exports = {
   'env': {'node': true},
   'extends': [
