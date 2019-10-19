@@ -14,13 +14,15 @@
     "node": ">=10"
   },
   "scripts": {
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "test": "jest"
   },
   "peerDependencies": {
     "eslint": "5.16.0"
   },
   "devDependencies": {
-    "eslint": "5.16.0"
+    "eslint": "5.16.0",
+    "jest": "24.9.0"
   },
   "dependencies": {
     "eslint-plugin-jest": "22.19.0",
