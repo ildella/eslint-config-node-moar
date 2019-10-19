@@ -4,6 +4,7 @@ extends: ['eslint:recommended', 'plugin:node/recommended', 'plugin:security/reco
 parserOptions: {ecmaVersion: 2019}
 plugins: [sonarjs, jest]
 rules:
+  block-scoped-var: warn
   complexity: [warn, 5]
   eol-last: [warn, always]
   indent: [warn, 2]
@@ -13,11 +14,13 @@ rules:
   - {code: 120, ignoreComments: false, ignoreRegExpLiterals: false, ignoreStrings: false,
     ignoreTemplateLiterals: false, ignoreUrls: false}
   max-lines: [warn, 150]
-  max-statements: [warn, 15]
   max-lines-per-function: [warn, 40]
   max-nested-callbacks: [warn, 2]
+  max-statements: [warn, 15]
   no-console: warn
-  # no-lonely-if: error
+  no-await-in-loop: warn
+  no-extra-parens: warn
+  no-lonely-if: warn
   no-multi-assign: warn
   no-multi-spaces: warn
   no-multi-str: warn
