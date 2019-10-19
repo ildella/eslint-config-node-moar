@@ -1,1 +1,1 @@
-module.exports = require('./src/manual')
+module.exports = require('./src/config')

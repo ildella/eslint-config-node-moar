@@ -13,11 +13,6 @@ test('transformed on-the-fly', async () => {
   expect(await yamlToJson()).toEqual(expected)
 })
 
-test('exported main', () => {
-  const doc = require('..')
-  expect(doc).toEqual(expected)
-})
-
 const Linter = require('eslint').Linter
 const linter = new Linter()
 test('validate basic code with basic eslint config', () => {
