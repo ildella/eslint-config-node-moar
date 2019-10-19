@@ -25,7 +25,7 @@ rules:
   - {max: 1, maxEOF: 0}
   no-path-concat: warn
   no-process-exit: warn
-  no-sync: off
+  no-sync: warn
   no-trailing-spaces: warn
   no-undef: error
   no-underscore-dangle: off
