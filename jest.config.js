@@ -4,7 +4,7 @@ module.exports = {
   notifyMode: 'failure-change, success-change',
   testEnvironment: 'node',
   testMatch: ['**/tests/**/*.test.js'],
-  testPathIgnorePatterns: ['/node_modules'],
+  testPathIgnorePatterns: ['/node_modules', '/generated'],
   // setupFilesAfterEnv: ['./tests/test-helpers.js'],
   collectCoverage: false,
   collectCoverageFrom: [

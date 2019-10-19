@@ -2,14 +2,15 @@ const yaml = require('js-yaml')
 const fs = require('fs')
 
 test('load yaml basic checks', () => {
-  const doc = yaml.safeLoad(fs.readFileSync('.eslintrc.yml', 'utf8'))
+  const doc = yaml.safeLoad(fs.readFileSync('config.yml', 'utf8'))
   expect(doc.env.node).toBe(true)
 })
 
 const expected = require('./expected')
 const yamlToJson = require('../src/yaml-to-json')
+
 test('transformed on-the-fly', () => {
-  expect(yamlToJson).toEqual(expected)
+  expect(yamlToJson()).toEqual(expected)
 })
 
 test('exported main', () => {

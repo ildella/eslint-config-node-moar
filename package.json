@@ -11,7 +11,7 @@
   "license": "MIT",
   "private": false,
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -22,7 +22,8 @@
   },
   "devDependencies": {
     "eslint": "5.16.0",
-    "jest": "24.9.0"
+    "jest": "24.9.0",
+    "stream-mock": "2.0.5"
   },
   "dependencies": {
     "eslint-plugin-jest": "22.19.0",
