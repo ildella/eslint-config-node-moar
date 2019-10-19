@@ -20,10 +20,10 @@ I was tired to copy-paste config and deps across projects, so I created a sharea
 
 The module is required as a dev dependency:
 
-```json
-"devDependencies": {
-  "eslint-config-node-opinionated": "0.1.0"
-}
+```shell
+yarn add -D eslint@5.16.0 eslint-config-node-opinionated@0.2.0
+# or with npm
+npm i -D eslint@5.16.0 eslint-config-node-opinionated@0.2.0
 ```
 
 A one-liner eslint config file is all you need now:
