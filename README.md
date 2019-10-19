@@ -1,5 +1,13 @@
 # An opinionated linter based on ESLint
 
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/npm/v/eslint-config-node-opinionated.svg?style=flat-square)](https://npmjs.com/package/eslint-config-node-opinionated)
+[![Build Status](https://travis-ci.com/ildella/eslint-config-node-opinionated.svg?branch=master)](https://travis-ci.com/ildella/eslint-config-node-opinionated)
+[![Known Vulnerabilities](https://snyk.io/test/github/ildella/eslint-config-node-opinionated/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ildella/eslint-config-node-opinionated?targetFile=package.json)
+[![David](https://img.shields.io/david/ildella/eslint-config-node-opinionated.svg)](https://david-dm.org/ildella/eslint-config-node-opinionated)
+[![David](https://img.shields.io/david/dev/ildella/eslint-config-node-opinionated.svg)](https://david-dm.org/ildella/eslint-config-node-opinionated)
+[![David](https://img.shields.io/david/peer/ildella/eslint-config-node-opinionated.svg)](https://david-dm.org/ildella/eslint-config-node-opinionated)
+
 Across multiple Node.js projects, I use the same linter
 
   * ESLint with node reccomended defaults
