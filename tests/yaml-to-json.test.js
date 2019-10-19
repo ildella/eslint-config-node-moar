@@ -9,8 +9,8 @@ test('load yaml basic checks', () => {
 const expected = require('./expected')
 const yamlToJson = require('../src/yaml-to-json')
 
-test('transformed on-the-fly', () => {
-  expect(yamlToJson()).toEqual(expected)
+test('transformed on-the-fly', async () => {
+  expect(await yamlToJson()).toEqual(expected)
 })
 
 test('exported main', () => {
@@ -29,8 +29,8 @@ test('validate basic code with basic eslint config', () => {
   expect(messages).toHaveLength(0)
 })
 
-//TODO: create an eslintrc.yml that does not use plugins, for testing
-test.skip('validate nodejs code with opinionated eslint config', () => {
-  const messages = linter.verify('var foo;', yamlToJson, {filename: 'foo.js'})
-  expect(messages).toHaveLength(0)
-})
+test.todo('create an eslintrc.yml that does not use plugins')
+// test('validate nodejs code with opinionated eslint config', () => {
+//   const messages = linter.verify('var foo;', yamlToJson, {filename: 'foo.js'})
+//   expect(messages).toHaveLength(0)
+// })

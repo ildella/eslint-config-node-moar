@@ -1,3 +1,3 @@
-const fs = require('fs')
+const {fsp} = require('./filesystem')
 const yaml = require('js-yaml')
-module.exports = (configFileName = 'config.yml') => yaml.safeLoad(fs.readFileSync(configFileName, 'utf8'))
+module.exports = async (configFileName = 'config.yml') => yaml.safeLoad(await fsp.readFile(configFileName, 'utf8'))
