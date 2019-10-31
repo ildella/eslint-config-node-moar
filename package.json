@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-opinionated",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "The linter config and plugins I use in all my Node.js projects.",
   "main": "index.js",
   "author": {
@@ -25,7 +25,7 @@
     "jest": "24.9.0"
   },
   "dependencies": {
-    "eslint-plugin-jest": "22.19.0",
+    "eslint-plugin-jest": "23.0.2",
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-security": "1.4.0",
     "eslint-plugin-sonarjs": "0.4.0"
