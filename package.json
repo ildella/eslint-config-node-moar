@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-opinionated",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "The linter config and plugins I use in all my Node.js projects.",
   "main": "index.js",
   "author": {
@@ -11,7 +11,7 @@
   "license": "MIT",
   "private": false,
   "engines": {
-    "node": ">=12"
+    "node": ">=8"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

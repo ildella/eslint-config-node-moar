@@ -1,6 +1,6 @@
 module.exports = {
   verbose: false,
-  notify: true,
+  notify: false,
   notifyMode: 'failure-change, success-change',
   testEnvironment: 'node',
   testMatch: ['**/tests/**/*.test.js'],
