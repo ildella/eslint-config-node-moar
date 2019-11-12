@@ -3,5 +3,5 @@ cache: yarn
 node_js:
   - "12"
 script: 
-  - yarn lint
+  # - yarn lint
   - yarn test --coverage
