@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-opinionated",
-  "version": "0.2.6",
+  "version": "0.3.0-pre",
   "description": "The linter config and plugins I use in all my Node.js projects.",
   "main": "index.js",
   "repository": {
@@ -19,19 +19,20 @@
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "test": "jest"
+    "test": "jest",
+    "print": "eslint --print-config src/config.js >> all-config.js"
   },
   "peerDependencies": {
-    "eslint": "5.16.0"
+    "eslint": "6"
   },
   "devDependencies": {
-    "eslint": "5.16.0",
+    "eslint": "6.6.0",
     "jest": "24.9.0"
   },
   "dependencies": {
-    "eslint-plugin-jest": "23.0.2",
+    "eslint-plugin-jest": "23.0.3",
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-security": "1.4.0",
-    "eslint-plugin-sonarjs": "0.4.0"
+    "eslint-plugin-sonarjs": "0.5.0"
   }
 }

@@ -8,3 +8,8 @@ test('main require', () => {
   const module = require('..')
   expect(module.env.node).toBe(true)
 })
+
+const eslint = require('eslint')
+test('eslint', () => {
+  expect(eslint).toBeDefined()
+})

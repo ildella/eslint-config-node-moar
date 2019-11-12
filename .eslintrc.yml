@@ -1,5 +1,0 @@
-env: {node: true}
-extends: ['eslint:recommended', 'plugin:node/recommended', 'plugin:security/recommended',
-  'plugin:jest/recommended', 'plugin:sonarjs/recommended']
-parserOptions: {ecmaVersion: 2019}
-plugins: [sonarjs, jest]
