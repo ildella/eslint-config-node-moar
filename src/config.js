@@ -66,7 +66,7 @@ module.exports = {
     'no-undefined': 'warn',
     // 'no-underscore-dangle': 'warn',
     'no-unused-vars': 'warn',
-    'no-use-before-define': 'warn',
+    'no-use-before-define': 'error',
     'no-useless-call': 'error',
     'no-useless-concat': 'warn',
     'no-useless-constructor': 'error',
