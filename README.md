@@ -21,7 +21,7 @@ I was tired to copy-paste config and deps across projects, so I created a sharea
 The module is required as a dev dependency:
 
 ```shell
-yarn add -D eslint@ eslint-config-node-opinionated
+yarn add -D eslint eslint-config-node-opinionated
 # or with npm
 npm i -D eslint eslint-config-node-opinionated
 ```
