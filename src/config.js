@@ -1,15 +1,15 @@
 module.exports = {
-  'env': {'node': true},
-  'extends': [
+  env: {'node': true},
+  extends: [
     'eslint:recommended',
     'plugin:node/recommended',
     'plugin:security/recommended',
     'plugin:jest/recommended',
-    'plugin:sonarjs/recommended'
+    'plugin:sonarjs/recommended',
   ],
-  'parserOptions': {'ecmaVersion': 2019},
-  'plugins': ['sonarjs', 'jest'],
-  'rules': {
+  parserOptions: {'ecmaVersion': 2019},
+  plugins: ['sonarjs', 'jest'],
+  rules: {
     'block-scoped-var': 'warn',
     'complexity': ['warn',5],
     'eol-last': ['warn', 'always'],
@@ -23,7 +23,7 @@ module.exports = {
         'ignoreRegExpLiterals': false,
         'ignoreStrings': false,
         'ignoreTemplateLiterals': false,
-        'ignoreUrls': false
+        'ignoreUrls': false,
       }
     ],
     'max-lines': ['warn', 150],
@@ -47,7 +47,7 @@ module.exports = {
       'warn',
       {
         'max': 1,
-        'maxEOF': 0
+        'maxEOF': 0,
       }
     ],
     'no-nested-ternary': 'warn',
@@ -91,8 +91,6 @@ module.exports = {
     'space-infix-ops': 'warn',
     'space-unary-ops': 'warn',
     'spaced-comment': 'warn',
-    // 'yoda': [],
-    // ES2015
     'arrow-spacing': ['warn', {before: true, after: true}],
     'arrow-parens': ['warn', 'as-needed'],
     'arrow-body-style': ['warn', 'as-needed'],
@@ -106,20 +104,22 @@ module.exports = {
     'sonarjs/cognitive-complexity': ['warn', 6],
     'sonarjs/no-identical-functions': 'warn',
     'sonarjs/prefer-immediate-return': 'warn',
-    'sonarjs/no-duplicate-string': ['warn', 4]
+    'sonarjs/no-duplicate-string': ['warn', 4],
   },
-  'overrides': {
-    'files': [
-      '**/tests/**',
-      '**/fixtures/**'
-    ],
-    'rules': {
-      'node/no-unpublished-require': 'off',
-      'max-nested-callbacks': ['warn', 3],
-      'max-lines': ['warn', 200],
-      'sonarjs/no-duplicate-string': 'off',
-      'no-console': 'off',
-      'no-sync': 'off',
+  overrides: [
+    {
+      files: [
+        '**/tests/**',
+        '**/fixtures/**',
+      ],
+      rules: {
+        'node/no-unpublished-require': 'off',
+        'max-nested-callbacks': ['warn', 3],
+        'max-lines': ['warn', 200],
+        'sonarjs/no-duplicate-string': 'off',
+        'no-console': 'off',
+        'no-sync': 'off',
+      }
     }
-  }
+  ]
 }
