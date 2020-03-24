@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-node-opinionated",
-  "version": "0.3.0-pre",
-  "description": "The linter config and plugins I use in all my Node.js projects.",
+  "version": "0.3.0",
+  "description": "The linter config and plugins I use in my Node.js projects.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   },
   "author": {
     "name": "Daniele Dellafiore",
-    "email": "daniele@pipelean.com"
+    "email": "daniele@dellafiore.net"
   },
   "contributors": [],
   "license": "MIT",
@@ -25,14 +25,14 @@
   "peerDependencies": {
     "eslint": "6"
   },
-  "devDependencies": {
-    "eslint": "6.7.1",
-    "jest": "24.9.0"
-  },
   "dependencies": {
-    "eslint-plugin-jest": "23.1.0",
-    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-jest": "23.8.0",
+    "eslint-plugin-node": "11.0.0",
     "eslint-plugin-security": "1.4.0",
-    "eslint-plugin-sonarjs": "0.5.0"
+    "eslint-plugin-sonarjs": "0.5.0",
+    "jest": "25.1.0"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0"
   }
 }
