@@ -16,18 +16,53 @@ Across multiple Node.js projects, I use the same linter
 
 I was tired to copy-paste config and deps across projects, so I created a shareable eslint config for myself. Eventually could be interesting for somebody else as well. 
 
-## How to use
+## Basic usage
 
-The module is required as a dev dependency:
+Install all the dependencies:
 
 ```shell
-yarn add -D eslint eslint-config-node-opinionated
-# or with npm
-npm i -D eslint eslint-config-node-opinionated
+yarn add -D eslint eslint-config-node-opinionated eslint-plugin-node eslint-plugin-security eslint-plugin-sonarjs
 ```
 
 A one-liner eslint config file is all you need now:
 
 ```shell
 echo "extends: ['node-opinionated']" > .eslintrc.yml
+```
+
+or create your own `.eslintrc.js` like this: 
+
+```javascript
+module.exports = {
+  extends: [
+    'node-opinionated',
+  ],
+}
+```
+
+## In combo with Jest
+
+I often use ESLint in combination with [Jest](jestjs.io/), with some specific overrides for the `tests` folder: 
+
+```javascript
+module.exports = {
+  extends: [
+    'node-opinionated',
+    'plugin:jest/recommended'
+  ],
+  plugins: ['jest'],
+  overrides: [
+    {
+      files: ['**/*test*/**'],
+      rules: {
+        'node/no-unpublished-require': 'off',
+        'node/no-unpublished-import': 'off',
+        'max-nested-callbacks': ['warn', 3],
+        'security/detect-child-process': 'off',
+        'security/detect-non-literal-fs-filename': 'off',
+      }
+    },
+  ]
+}
+
 ```

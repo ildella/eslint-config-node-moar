@@ -4,13 +4,23 @@ module.exports = {
     'eslint:recommended',
     'plugin:node/recommended',
     'plugin:security/recommended',
-    'plugin:jest/recommended',
     'plugin:sonarjs/recommended',
   ],
-  parserOptions: {'ecmaVersion': 2019},
-  plugins: ['sonarjs', 'jest'],
+  parserOptions: {'ecmaVersion': 2020},
+  plugins: ['sonarjs'],
   rules: {
+    'arrow-spacing': ['warn', {before: true, after: true}],
+    'arrow-parens': ['warn', 'as-needed'],
+    'arrow-body-style': ['warn', 'as-needed'],
     'block-scoped-var': 'warn',
+    'camelcase': 'warn',
+    // 'comma-dangle': ['warn', {
+    //   'arrays': 'only-multiline',
+    //   'objects': 'only-multiline',
+    //   'imports': 'only-multiline',
+    //   'exports': 'only-multiline',
+    //   'functions': 'only-multiline'
+    // }],
     'complexity': ['warn',5],
     'eol-last': ['warn', 'always'],
     'indent': ['warn', 2],
@@ -18,7 +28,7 @@ module.exports = {
     'max-len': [
       'warn',
       {
-        'code': 120,
+        'code': 100,
         'ignoreComments': false,
         'ignoreRegExpLiterals': false,
         'ignoreStrings': false,
@@ -34,7 +44,7 @@ module.exports = {
     'no-await-in-loop': 'warn',
     'no-empty-function': 'warn',
     'no-extra-parens': 'warn',
-    "no-implicit-globals": 'warn',
+    'no-implicit-globals': 'warn',
     'no-labels': 'warn',
     'no-lone-blocks': 'warn',
     'no-loop-func': 'warn',
@@ -51,6 +61,9 @@ module.exports = {
       }
     ],
     'no-nested-ternary': 'warn',
+    'no-unneeded-ternary': 'warn',
+    'no-dupe-else-if': 'warn',
+    'no-else-return': 'warn',
     'no-new-func': 'warn',
     'no-new-wrappers': 'warn',
     'no-path-concat': 'warn',
@@ -63,7 +76,7 @@ module.exports = {
     'no-throw-literal': 'warn',
     'no-trailing-spaces': 'warn',
     'no-undef': 'error',
-    'no-undefined': 'warn',
+    'no-undefined': 'error',
     // 'no-underscore-dangle': 'warn',
     'no-unused-vars': 'warn',
     'no-use-before-define': 'error',
@@ -91,20 +104,16 @@ module.exports = {
     'space-infix-ops': 'warn',
     'space-unary-ops': 'warn',
     'spaced-comment': 'warn',
-    'arrow-spacing': ['warn', {before: true, after: true}],
-    'arrow-parens': ['warn', 'as-needed'],
-    'arrow-body-style': ['warn', 'as-needed'],
-    'jest/no-disabled-tests': 'warn',
-    'jest/no-test-callback': 'off',
     'node/no-extraneous-require': 'error',
     'node/no-unpublished-require': 'warn',
+    'node/no-missing-require': 'error',
     'node/shebang': 'off',
-    'security/detect-non-literal-fs-filename': 'off',
-    'security/detect-object-injection': 'off',
     'sonarjs/cognitive-complexity': ['warn', 6],
     'sonarjs/no-identical-functions': 'warn',
     'sonarjs/prefer-immediate-return': 'warn',
     'sonarjs/no-duplicate-string': ['warn', 4],
+    'sonarjs/no-redundant-jump': 'warn',
+    'sonarjs/prefer-object-literal': 'warn'
   },
   overrides: [
     {
@@ -113,12 +122,12 @@ module.exports = {
         '**/fixtures/**',
       ],
       rules: {
-        'node/no-unpublished-require': 'off',
-        'max-nested-callbacks': ['warn', 3],
         'max-lines': ['warn', 200],
-        'sonarjs/no-duplicate-string': 'off',
+        'max-nested-callbacks': ['warn', 3],
         'no-console': 'off',
         'no-sync': 'off',
+        'node/no-unpublished-require': 'off',
+        'sonarjs/no-duplicate-string': 'off',
       }
     }
   ]
