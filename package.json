@@ -17,15 +17,20 @@
   "engines": {
     "node": ">=10"
   },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "nodejs"
+  ],
   "scripts": {
     "lint": "eslint . --max-warnings 0 --config src/config.js",
-    "print": "eslint --print-config src/config.js >> all-config.js"
+    "print": "eslint --print-config src/config.js >> all-config.js",
+    "bug.setup": "git bug bridge configure --target=github --url=https://github.com/ildella/eslint-config-node-opinionated"
   },
-  "dependencies": {
-    "eslint": "^6.8.0",
-    "eslint-plugin-jest": "^23.8.0",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-sonarjs": "^0.5.0"
+  "peerDependencies": {
+    "eslint": ">=6.8.0",
+    "eslint-plugin-node": ">=11.0.0",
+    "eslint-plugin-security": ">=1.4.0",
+    "eslint-plugin-sonarjs": ">=0.5.0"
   }
 }

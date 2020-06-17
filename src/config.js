@@ -104,8 +104,6 @@ module.exports = {
     'space-infix-ops': 'warn',
     'space-unary-ops': 'warn',
     'spaced-comment': 'warn',
-    'jest/no-disabled-tests': 'warn',
-    'jest/no-test-callback': 'off',
     'node/no-extraneous-require': 'error',
     'node/no-unpublished-require': 'warn',
     'node/no-missing-require': 'error',
