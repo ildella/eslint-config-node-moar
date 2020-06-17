@@ -4,11 +4,10 @@ module.exports = {
     'eslint:recommended',
     'plugin:node/recommended',
     'plugin:security/recommended',
-    'plugin:jest/recommended',
     'plugin:sonarjs/recommended',
   ],
   parserOptions: {'ecmaVersion': 2019},
-  plugins: ['sonarjs', 'jest'],
+  plugins: ['sonarjs'],
   rules: {
     'block-scoped-var': 'warn',
     'complexity': ['warn',5],
@@ -18,7 +17,7 @@ module.exports = {
     'max-len': [
       'warn',
       {
-        'code': 120,
+        'code': 110,
         'ignoreComments': false,
         'ignoreRegExpLiterals': false,
         'ignoreStrings': false,
@@ -34,7 +33,7 @@ module.exports = {
     'no-await-in-loop': 'warn',
     'no-empty-function': 'warn',
     'no-extra-parens': 'warn',
-    "no-implicit-globals": 'warn',
+    'no-implicit-globals': 'warn',
     'no-labels': 'warn',
     'no-lone-blocks': 'warn',
     'no-loop-func': 'warn',
