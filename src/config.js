@@ -13,7 +13,7 @@ module.exports = {
     'arrow-parens': ['warn', 'as-needed'],
     'arrow-body-style': ['warn', 'as-needed'],
     'block-scoped-var': 'warn',
-    // camelcase: 'warn',
+    'camelcase': 'warn',
     // 'comma-dangle': ['warn', {
     //   'arrays': 'only-multiline',
     //   'objects': 'only-multiline',
