@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "lint": "eslint . --max-warnings 0 --config src/config.js",
-    "print": "eslint --print-config src/config.js >> all-config.js",
+    "print": "eslint --print-config src/config.js >> all-config.js"
   },
   "peerDependencies": {
     "eslint": ">=6.8.0",
