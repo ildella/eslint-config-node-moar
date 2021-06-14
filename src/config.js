@@ -1,12 +1,20 @@
 module.exports = {
-  env: {'node': true},
+  env: {
+    es6: true, // ES6 globals + ES6 syntax
+    node: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2020, // ES6 syntax only
+    ecmaFeatures: {
+      impliedStrict: true,
+    },
+  },
   extends: [
     'eslint:recommended',
     'plugin:node/recommended',
     'plugin:security/recommended',
     'plugin:sonarjs/recommended',
   ],
-  parserOptions: {'ecmaVersion': 2020},
   plugins: ['sonarjs'],
   rules: {
     'arrow-spacing': ['warn', {before: true, after: true}],
@@ -108,6 +116,8 @@ module.exports = {
     'node/no-unpublished-require': 'warn',
     'node/no-missing-require': 'error',
     'node/shebang': 'off',
+    'security/detect-non-literal-fs-filename': 'off',
+    'security/detect-object-injection': 'off',
     'sonarjs/cognitive-complexity': ['warn', 6],
     'sonarjs/no-identical-functions': 'warn',
     'sonarjs/prefer-immediate-return': 'warn',
