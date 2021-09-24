@@ -30,13 +30,6 @@ module.exports = {
     'arrow-parens': ['warn', 'as-needed'],
     'arrow-spacing': ['warn', {before: true, after: true}],
     'camelcase': 'warn',
-    // 'comma-dangle': ['warn', {
-    //   'arrays': 'only-multiline',
-    //   'objects': 'only-multiline',
-    //   'imports': 'only-multiline',
-    //   'exports': 'only-multiline',
-    //   'functions': 'only-multiline'
-    // }],
     'comma-dangle': ['warn', 'always-multiline'],
     'complexity': ['warn',5],
     'eol-last': ['warn', 'always'],
