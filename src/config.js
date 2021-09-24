@@ -11,7 +11,7 @@ module.exports = {
     'plugin:sonarjs/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2020, // ES6 syntax only
+    ecmaVersion: 2021, // ES6 syntax only
     ecmaFeatures: {
       impliedStrict: true,
       globalReturn: false,
