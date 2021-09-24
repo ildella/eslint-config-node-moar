@@ -1,18 +1,34 @@
 module.exports = {
-  env: {'node': true},
+  env: {
+    es6: true, // ES6 globals + ES6 syntax
+    node: true,
+  },
   extends: [
     'eslint:recommended',
     'plugin:node/recommended',
+    'plugin:promise/recommended',
     'plugin:security/recommended',
     'plugin:sonarjs/recommended',
   ],
-  parserOptions: {'ecmaVersion': 2020},
-  plugins: ['sonarjs'],
+  parserOptions: {
+    ecmaVersion: 2021, // ES6 syntax only
+    ecmaFeatures: {
+      impliedStrict: true,
+      globalReturn: false,
+    },
+    allowImportExportEverywhere: false,
+    requireConfigFile: false,
+  },
+  plugins: [
+    'promise',
+    'sonarjs'
+  ],
   rules: {
-    'arrow-spacing': ['warn', {before: true, after: true}],
-    'arrow-parens': ['warn', 'as-needed'],
     'arrow-body-style': ['warn', 'as-needed'],
-    'block-scoped-var': 'warn',
+    // 'array-element-newline': ['warn', {'multiline': true, 'minItems': 4, 'consistent': true}],
+    'array-element-newline': ['warn', 'consistent'],    'block-scoped-var': 'warn',
+    'arrow-parens': ['warn', 'as-needed'],
+    'arrow-spacing': ['warn', {before: true, after: true}],
     'camelcase': 'warn',
     // 'comma-dangle': ['warn', {
     //   'arrays': 'only-multiline',
@@ -21,6 +37,7 @@ module.exports = {
     //   'exports': 'only-multiline',
     //   'functions': 'only-multiline'
     // }],
+    'comma-dangle': ['warn', 'always-multiline'],
     'complexity': ['warn',5],
     'eol-last': ['warn', 'always'],
     'indent': ['warn', 2],
