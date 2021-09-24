@@ -11,7 +11,7 @@ module.exports = {
     'plugin:sonarjs/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2021, // ES6 syntax only
+    ecmaVersion: 2020, // ES6 syntax only
     ecmaFeatures: {
       impliedStrict: true,
       globalReturn: false,
@@ -21,12 +21,12 @@ module.exports = {
   },
   plugins: [
     'promise',
-    'sonarjs'
+    'sonarjs',
   ],
   rules: {
     'arrow-body-style': ['warn', 'as-needed'],
     // 'array-element-newline': ['warn', {'multiline': true, 'minItems': 4, 'consistent': true}],
-    'array-element-newline': ['warn', 'consistent'],    'block-scoped-var': 'warn',
+    'array-element-newline': ['warn', 'consistent'], 'block-scoped-var': 'warn',
     'arrow-parens': ['warn', 'as-needed'],
     'arrow-spacing': ['warn', {before: true, after: true}],
     'camelcase': 'warn',
@@ -51,11 +51,12 @@ module.exports = {
         'ignoreStrings': false,
         'ignoreTemplateLiterals': false,
         'ignoreUrls': false,
-      }
+      },
     ],
     'max-lines': ['warn', 150],
-    'max-statements': ['warn', 15],
     'max-lines-per-function': ['warn', 40],
+    'max-statements': ['warn', 15],
+    'max-statements-per-line': ['warn', {'max': 1}],
     'max-nested-callbacks': ['warn', 2],
     'no-console': 'warn',
     'no-await-in-loop': 'warn',
@@ -75,7 +76,7 @@ module.exports = {
       {
         'max': 1,
         'maxEOF': 0,
-      }
+      },
     ],
     'no-nested-ternary': 'warn',
     'no-unneeded-ternary': 'warn',
@@ -125,12 +126,14 @@ module.exports = {
     'node/no-unpublished-require': 'warn',
     'node/no-missing-require': 'error',
     'node/shebang': 'off',
+    'security/detect-non-literal-fs-filename': 'off',
+    'security/detect-object-injection': 'off',
     'sonarjs/cognitive-complexity': ['warn', 6],
     'sonarjs/no-identical-functions': 'warn',
     'sonarjs/prefer-immediate-return': 'warn',
     'sonarjs/no-duplicate-string': ['warn', 4],
     'sonarjs/no-redundant-jump': 'warn',
-    'sonarjs/prefer-object-literal': 'warn'
+    'sonarjs/prefer-object-literal': 'warn',
   },
   overrides: [
     {
@@ -145,7 +148,7 @@ module.exports = {
         'no-sync': 'off',
         'node/no-unpublished-require': 'off',
         'sonarjs/no-duplicate-string': 'off',
-      }
-    }
-  ]
+      },
+    },
+  ],
 }
