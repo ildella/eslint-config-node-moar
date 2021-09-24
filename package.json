@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-opinionated",
-  "version": "0.5.0-beta",
+  "version": "0.5.0",
   "description": "The linter config and plugins I use in Node.js projects.",
   "main": "index.js",
   "repository": {
