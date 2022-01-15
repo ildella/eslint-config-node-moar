@@ -133,6 +133,7 @@ module.exports = {
     'sonarjs/no-duplicate-string': ['warn', 5],
     'sonarjs/no-redundant-jump': 'warn',
     'sonarjs/prefer-object-literal': 'warn',
+    'unicorn/prefer-module': 'off',
   },
   overrides: [
     {
