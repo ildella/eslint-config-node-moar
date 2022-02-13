@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 module.exports = {
   env: {
     es6: true, // ES6 globals + ES6 syntax
@@ -21,6 +22,7 @@ module.exports = {
   },
   plugins: [
     'promise',
+    'security',
     'sonarjs',
   ],
   rules: {
