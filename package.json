@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-node-opinionated",
-  "version": "0.5.1",
-  "description": "The linter config and plugins I use in Node.js projects.",
+  "version": "0.6.0",
+  "description": "The linter config and plugins for folks who does not like to be standard.",
   "main": "index.js",
   "repository": {
     "type": "git",

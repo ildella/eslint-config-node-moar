@@ -1,7 +1,6 @@
-/* eslint-disable max-lines */
 module.exports = {
   env: {
-    es6: true, // ES6 globals + ES6 syntax
+    es2021: true, // globals + syntax
     node: true,
   },
   extends: [
@@ -12,7 +11,7 @@ module.exports = {
     'plugin:sonarjs/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2021, // ES6 syntax only
+    ecmaVersion: 2021, // syntax only
     ecmaFeatures: {
       impliedStrict: true,
       globalReturn: false,
@@ -27,10 +26,10 @@ module.exports = {
   ],
   rules: {
     'arrow-body-style': ['warn', 'as-needed'],
-    // 'array-element-newline': ['warn', {'multiline': true, 'minItems': 4, 'consistent': true}],
-    'array-element-newline': ['warn', 'consistent'], 'block-scoped-var': 'warn',
+    'array-element-newline': ['warn', 'consistent'], 
     'arrow-parens': ['warn', 'as-needed'],
     'arrow-spacing': ['warn', {before: true, after: true}],
+    'block-scoped-var': 'warn',
     'camelcase': 'warn',
     'comma-dangle': ['warn', {
       'arrays': 'always-multiline',
@@ -127,6 +126,15 @@ module.exports = {
     'node/no-unpublished-require': 'warn',
     'node/no-missing-require': 'error',
     'node/shebang': 'off',
+    'object-shorthand': ['warn', 'properties'],
+    'object-curly-newline': ['warn', {
+      'multiline': true,
+        // 'consistent': true,
+      'minProperties': 3,
+    }],
+    'object-property-newline': ['warn'],
+    'padded-blocks': ['warn', {'blocks': 'never', 'switches': 'never', 'classes': 'never'}],
+    'quote-props': ['warn', 'as-needed'],
     'security/detect-non-literal-fs-filename': 'off',
     'security/detect-object-injection': 'off',
     'sonarjs/cognitive-complexity': ['warn', 6],
@@ -135,11 +143,13 @@ module.exports = {
     'sonarjs/no-duplicate-string': ['warn', 5],
     'sonarjs/no-redundant-jump': 'warn',
     'sonarjs/prefer-object-literal': 'warn',
+    'space-in-parens': ['warn', 'never'],
     'unicorn/prefer-module': 'off',
   },
   overrides: [
     {
       files: [
+        '**/test/**',
         '**/tests/**',
         '**/fixtures/**',
       ],
