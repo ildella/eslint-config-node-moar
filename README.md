@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/npm/v/eslint-config-node-opinionated.svg?style=flat-square)](https://npmjs.com/package/eslint-config-node-opinionated)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fildella%2Feslint-config-node-opinionated%2Fbadge&style=flat)](https://actions-badge.atrox.dev/ildella/eslint-config-node-opinionated/goto)
+![Build Status](https://github.com/ildella/eslint-config-node-opinionated/actions/workflows/main.yml/badge.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/ildella/eslint-config-node-opinionated/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ildella/eslint-config-node-opinionated?targetFile=package.json)
 
 Across multiple Node.js projects, I use the same linter
