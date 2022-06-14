@@ -154,7 +154,6 @@ module.exports = {
     'sonarjs/no-redundant-jump': 'warn',
     'sonarjs/prefer-object-literal': 'warn',
     'space-in-parens': ['warn', 'never'],
-    'unicorn/prefer-module': 'off',
   },
   overrides: [
     {
