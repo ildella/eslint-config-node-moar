@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-opinionated",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "The linter config and plugins for folks who does not like to be standard.",
   "main": "index.js",
   "repository": {
