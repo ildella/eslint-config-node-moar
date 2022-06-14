@@ -155,24 +155,4 @@ module.exports = {
     'sonarjs/prefer-object-literal': 'warn',
     'space-in-parens': ['warn', 'never'],
   },
-  overrides: [
-    {
-      files: [
-        '**/test/**',
-        '**/tests/**',
-        '**/fixtures/**',
-      ],
-      rules: {
-        'max-lines': ['warn', 200],
-        'max-nested-callbacks': ['warn', 3],
-        'no-console': 'off',
-        'no-sync': 'off',
-        'node/no-unpublished-require': 'off',
-        'node/no-extraneous-require': 'off',
-        'promise/no-callback-in-promise': 'off',
-        'security/detect-non-literal-fs-filename': 'off',
-        'sonarjs/no-duplicate-string': 'off',
-      },
-    },
-  ],
 }
