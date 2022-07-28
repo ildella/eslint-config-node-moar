@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-strict",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "The linter config and plugins for people who does not want to be standard but wants to be strict",
   "main": "index.js",
   "repository": {
