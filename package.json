@@ -1,12 +1,12 @@
 
 {
-  "name": "eslint-config-node-opinionated",
-  "version": "0.6.3",
-  "description": "The linter config and plugins for folks who does not like to be standard.",
+  "name": "eslint-config-node-strict",
+  "version": "0.7.0",
+  "description": "The linter config and plugins for people who does not want to be standard but wants to be strict",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ildella/eslint-config-node-opinionated"
+    "url": "https://github.com/ildella/eslint-config-node-strict"
   },
   "author": {
     "name": "Daniele Dellafiore",
@@ -35,10 +35,10 @@
     "eslint-plugin-sonarjs": ">=0.5.0"
   },
   "devDependencies": {
-    "eslint": "8.17.0",
+    "eslint": "8.20.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.0.0",
     "eslint-plugin-security": "1.5.0",
-    "eslint-plugin-sonarjs": "0.13.0"
+    "eslint-plugin-sonarjs": "0.14.0"
   }
 }
