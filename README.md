@@ -24,7 +24,7 @@ yarn add -D eslint eslint-config-node-opinionated eslint-plugin-node eslint-plug
 A one-liner eslint config file is all you need now:
 
 ```shell
-echo "extends: ['node-opinionated']" > .eslintrc.yml
+echo "extends: ['node-strict']" > .eslintrc.yml
 ```
 
 or create your own `.eslintrc.js` like this: 
@@ -32,7 +32,7 @@ or create your own `.eslintrc.js` like this:
 ```javascript
 module.exports = {
   extends: [
-    'node-opinionated',
+    'node-strict',
   ],
 }
 ```
@@ -44,7 +44,7 @@ I often use ESLint in combination with [Jest](jestjs.io/), with some specific ov
 ```javascript
 module.exports = {
   extends: [
-    'node-opinionated',
+    'node-strict',
     'plugin:jest/recommended'
   ],
   plugins: ['jest'],
