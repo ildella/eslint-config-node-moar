@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 module.exports = {
   env: {
-    es2021: true, // globals + syntax
+    es2022: true, // globals + syntax
     node: true,
   },
   extends: [
