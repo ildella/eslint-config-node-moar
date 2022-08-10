@@ -12,7 +12,7 @@ module.exports = {
     'plugin:sonarjs/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2021, // syntax only
+    ecmaVersion: 2022, // syntax only
     ecmaFeatures: {
       impliedStrict: true,
       globalReturn: false,
