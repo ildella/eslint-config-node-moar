@@ -26,18 +26,18 @@
     "lint": "eslint . --max-warnings 0 --config src/config.js",
     "print": "eslint --print-config src/config.js >> all-config.js"
   },
-  "peerDependencies": {
-    "eslint": ">=8.0.0",
-    "eslint-plugin-node": ">=11.1.0",
-    "eslint-plugin-promise": ">=5.0.0",
-    "eslint-plugin-security": ">=1.5.0",
-    "eslint-plugin-sonarjs": ">=0.5.0"
-  },
   "devDependencies": {
     "eslint": "8.21.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.0.0",
     "eslint-plugin-security": "1.5.0",
     "eslint-plugin-sonarjs": "0.15.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0",
+    "eslint-plugin-node": ">=11.1.0",
+    "eslint-plugin-promise": ">=5.0.0",
+    "eslint-plugin-security": ">=1.5.0",
+    "eslint-plugin-sonarjs": ">=0.5.0"
   }
 }

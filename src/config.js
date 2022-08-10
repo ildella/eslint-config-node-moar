@@ -1,16 +1,5 @@
 /* eslint-disable max-lines */
 module.exports = {
-  env: {
-    es2022: true, // globals + syntax
-    node: true,
-  },
-  extends: [
-    'eslint:recommended',
-    'plugin:node/recommended',
-    'plugin:promise/recommended',
-    'plugin:security/recommended',
-    'plugin:sonarjs/recommended',
-  ],
   parserOptions: {
     ecmaVersion: 2022, // syntax only
     ecmaFeatures: {
@@ -20,10 +9,21 @@ module.exports = {
     allowImportExportEverywhere: false,
     requireConfigFile: false,
   },
+  env: {
+    es2022: true, // globals + syntax
+    node: true,
+  },
   plugins: [
     'promise',
     'security',
     'sonarjs',
+  ],
+  extends: [
+    'eslint:recommended',
+    'plugin:node/recommended',
+    'plugin:promise/recommended',
+    'plugin:security/recommended',
+    'plugin:sonarjs/recommended',
   ],
   rules: {
     'arrow-body-style': ['warn', 'as-needed'],
