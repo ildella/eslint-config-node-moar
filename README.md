@@ -5,7 +5,7 @@
 [![Build Status](https://github.com/ildella/eslint-config-node-moar/actions/workflows/main.yaml/badge.svg)](https://github.com/ildella/eslint-config-node-moar/actions)
 [![Known Vulnerabilities](https://snyk.io/test/github/ildella/eslint-config-node-moar/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ildella/eslint-config-node-moar?targetFile=package.json)
 
-An ESLint [Shareble Config](https://eslint.org/docs/latest/developer-guide/shareable-configs) that includes:
+An ESLint [Shareable Config](https://eslint.org/docs/latest/developer-guide/shareable-configs) that includes:
 
   * ESLint with node/recommended 
   * A very strict and opinionated rule set
