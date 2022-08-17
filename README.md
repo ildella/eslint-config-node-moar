@@ -5,16 +5,24 @@
 [![Build Status](https://github.com/ildella/eslint-config-node-moar/actions/workflows/main.yaml/badge.svg)](https://github.com/ildella/eslint-config-node-moar/actions)
 [![Known Vulnerabilities](https://snyk.io/test/github/ildella/eslint-config-node-moar/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ildella/eslint-config-node-moar?targetFile=package.json)
 
-An ESLint [Shareable Config](https://eslint.org/docs/latest/developer-guide/shareable-configs) that includes:
+An ESLint [Shareable Config](https://eslint.org/docs/latest/developer-guide/shareable-configs) that includes this plugins and enforces reccomended:
 
-  * ESLint with node/recommended 
-  * A very strict and opinionated rule set
-  * Errors are errors, and warnings are warnings. Yes, that's the rule.
-  * The security plugin
-  * The sonarjs plugin
-  * The promise plugin
+```javascript
+  extends: [
+    'eslint:recommended',
+    'plugin:node/recommended',
+    'plugin:promise/recommended',
+    'plugin:security/recommended',
+    'plugin:sonarjs/recommended',
+  ],
+```
 
-I was tired to copy-paste config and deps across projects, so I created a shareable eslint config for myself. Eventually could be interesting for somebody else as well. 
+And then defines: 
+
+  * a quite strict and opinionated rule set
+  * formatting rules - no need for prettier
+  * errors as errors, and warnings as warnings. 
+    - As in: if it does break it, it's an error. If it's a convention, it's a warning.
 
 Why -moar? Because -strict was already taken and -more is boring. 
 
@@ -26,44 +34,18 @@ Install all the dependencies:
 yarn add -D eslint eslint-config-node-moar eslint-plugin-node eslint-plugin-security eslint-plugin-sonarjs
 ```
 
-A one-liner eslint config file is all you need now:
+Create your own `.eslintrc.js`: 
+
+```javascript
+module.exports = {
+  extends: [
+    'node-moar',
+  ],
+}
+```
+
+Or use this one-liner:
 
 ```shell
 echo "extends: ['node-moar']" > .eslintrc.yml
-```
-
-or create your own `.eslintrc.js` like this: 
-
-```javascript
-module.exports = {
-  extends: [
-    'node-moar',
-  ],
-}
-```
-
-## In combo with Jest
-
-I often use ESLint in combination with [Jest](jestjs.io/), with some specific overrides for the `tests` folder: 
-
-```javascript
-module.exports = {
-  extends: [
-    'node-moar',
-    'plugin:jest/recommended'
-  ],
-  plugins: ['jest'],
-  overrides: [
-    {
-      files: ['**/*test*/**'],
-      rules: {
-        'node/no-unpublished-require': 'off',
-        'node/no-unpublished-import': 'off',
-        'max-nested-callbacks': ['warn', 3],
-        'security/detect-child-process': 'off',
-        'security/detect-non-literal-fs-filename': 'off',
-      }
-    },
-  ]
-}
 ```
