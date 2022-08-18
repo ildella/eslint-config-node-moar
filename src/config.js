@@ -146,8 +146,6 @@ module.exports = {
     'node/no-unpublished-require': 'warn',
     'node/no-missing-require': 'error',
     'node/shebang': 'off',
-    'security/detect-non-literal-fs-filename': 'off',
-    'security/detect-object-injection': 'off',
     'sonarjs/cognitive-complexity': ['warn', 6],
     'sonarjs/no-identical-functions': 'warn',
     'sonarjs/prefer-immediate-return': 'warn',
