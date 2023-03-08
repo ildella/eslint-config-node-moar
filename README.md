@@ -49,3 +49,10 @@ Or use this one-liner:
 ```shell
 echo "extends: ['node-moar']" > .eslintrc.yml
 ```
+
+## Get... moar :)
+
+Part of the family are: 
+
+  * [test](https://github.com/ildella/eslint-config-node-moar-test) - with linters for [Jest](https://github.com/facebook/)
+  * [stricter](https://github.com/ildella/eslint-config-node-moar-stricter) - stricter lint rules enforced using more plugins
