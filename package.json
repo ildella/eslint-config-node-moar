@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-moar",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "description": "The linter config and plugins for people who does not want to be standard but wants moar",
   "main": "index.js",
   "repository": {
@@ -8,14 +8,13 @@
     "url": "https://github.com/ildella/eslint-config-node-moar"
   },
   "author": {
-    "name": "Daniele Dellafiore",
-    "email": "daniele@dellafiore.net"
+    "name": "Daniele Dellafiore"
   },
   "contributors": [],
   "license": "MIT",
   "private": false,
   "engines": {
-    "node": ">=12"
+    "node": ">=16.10"
   },
   "keywords": [
     "eslint",
@@ -27,11 +26,11 @@
     "print": "eslint --print-config src/config.js >> all-config.js"
   },
   "devDependencies": {
-    "eslint": "8.21.0",
+    "eslint": "8.38.0",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "6.0.0",
-    "eslint-plugin-security": "1.5.0",
-    "eslint-plugin-sonarjs": "0.15.0"
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-security": "1.7.1",
+    "eslint-plugin-sonarjs": "0.19.0"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0",
