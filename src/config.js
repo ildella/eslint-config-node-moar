@@ -40,7 +40,7 @@ module.exports = {
       objects: 'always-multiline',
       imports: 'always-multiline',
       exports: 'always-multiline',
-      functions: 'never',
+      functions: 'only-multiline',
     }],
     'complexity': ['warn',5],
     'eol-last': ['warn', 'always'],
@@ -115,10 +115,10 @@ module.exports = {
     'object-curly-newline': ['warn', {
       multiline: true,
       // 'consistent': true,
-      minProperties: 3,
+      minProperties: 4,
     }],
     'object-curly-spacing': 'warn',
-    'object-property-newline': ['warn'],
+    'object-property-newline': ['warn', {allowAllPropertiesOnSameLine: true}]
     'object-shorthand': ['warn', 'properties'],
     'padded-blocks': ['warn', {
       blocks: 'never',
