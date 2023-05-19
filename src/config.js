@@ -118,7 +118,7 @@ module.exports = {
       minProperties: 4,
     }],
     'object-curly-spacing': 'warn',
-    'object-property-newline': ['warn', {allowAllPropertiesOnSameLine: true}]
+    'object-property-newline': ['warn', {allowAllPropertiesOnSameLine: true}],
     'object-shorthand': ['warn', 'properties'],
     'padded-blocks': ['warn', {
       blocks: 'never',
