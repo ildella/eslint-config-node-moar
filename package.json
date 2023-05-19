@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-moar",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "The linter config and plugins for people who does not want to be standard but wants moar",
   "main": "index.js",
   "repository": {
@@ -26,7 +26,7 @@
     "print": "eslint --print-config src/config.js >> all-config.js"
   },
   "devDependencies": {
-    "eslint": "8.38.0",
+    "eslint": "8.40.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-security": "1.7.1",
