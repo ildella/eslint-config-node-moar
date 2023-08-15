@@ -149,7 +149,7 @@ module.exports = {
     'sonarjs/cognitive-complexity': ['warn', 6],
     'sonarjs/no-identical-functions': 'warn',
     'sonarjs/prefer-immediate-return': 'warn',
-    'sonarjs/no-duplicate-string': ['warn', 5],
+    'sonarjs/no-duplicate-string': ['warn', {threshold: 5}],
     'sonarjs/no-redundant-jump': 'warn',
     'sonarjs/prefer-object-literal': 'warn',
   },
