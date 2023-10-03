@@ -1,8 +1,9 @@
 {
   "name": "eslint-config-node-moar",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "The linter config and plugins for people who does not want to be standard but wants moar",
   "main": "index.js",
+  "packageManager": "yarn@4.0.0-rc.51",
   "repository": {
     "type": "git",
     "url": "https://github.com/ildella/eslint-config-node-moar"
@@ -12,7 +13,6 @@
   },
   "contributors": [],
   "license": "MIT",
-  "private": false,
   "engines": {
     "node": ">=16.10"
   },
@@ -22,16 +22,17 @@
     "nodejs"
   ],
   "scripts": {
+    "audit": "yarn npm audit",
     "lint": "eslint . --max-warnings 0 --config src/config.js",
     "print": "eslint --print-config src/config.js >> all-config.js",
     "release": "dev-github-npm-release-and-publish.sh"
   },
   "devDependencies": {
-    "eslint": "8.47.0",
+    "eslint": "8.50.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-security": "1.7.1",
-    "eslint-plugin-sonarjs": "0.20.0"
+    "eslint-plugin-sonarjs": "0.21.0"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0",
