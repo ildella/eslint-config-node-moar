@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-moar",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "The linter config and plugins for people who does not want to be standard but wants moar",
   "packageManager": "yarn@4.0.2",
   "main": "index.js",
