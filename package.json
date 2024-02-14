@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-node-moar",
-  "version": "0.12.1",
-  "description": "The linter config and plugins for people who does not want to be standard but wants moar",
-  "packageManager": "yarn@4.0.2",
+  "version": "0.20.0",
+  "description": "Moar: the linter config for people who does not want to be standard. Core Package.",
+  "packageManager": "yarn@4.1.0",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -23,22 +23,24 @@
   ],
   "scripts": {
     "audit": "yarn npm audit",
-    "lint": "eslint . --max-warnings 0 --config src/config.js",
-    "print": "eslint --print-config src/config.js >> all-config.js",
+    "lint": "eslint . --max-warnings 0",
+    "lint.flat": "eslint . --max-warnings 0 --config eslint.config.js",
+    "lint.print": "eslint --print-config .eslintrc.js > all-config.json",
     "release": "dev-github-npm-release-and-publish.sh"
   },
   "devDependencies": {
-    "eslint": "8.55.0",
+    "@eslint/eslintrc": "3.0.1",
+    "eslint": "8.56.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-security": "1.7.1",
-    "eslint-plugin-sonarjs": "0.23.0"
+    "eslint-plugin-sonarjs": "0.24.0"
   },
   "peerDependencies": {
-    "eslint": ">=8.0.0",
+    "eslint": ">=8.23.0",
     "eslint-plugin-node": ">=11.1.0",
     "eslint-plugin-promise": ">=5.0.0",
-    "eslint-plugin-security": ">=1.5.0",
+    "eslint-plugin-security": "*",
     "eslint-plugin-sonarjs": ">=0.5.0"
   }
 }
