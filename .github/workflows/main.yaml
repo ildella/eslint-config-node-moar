@@ -1,4 +1,5 @@
 name: check
+
 on: 
   push:
     branches: [master]
@@ -8,12 +9,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    # runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
         node-version: [18, 20]
-        # os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
     - uses: actions/checkout@v4
@@ -21,7 +20,6 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        # registry-url: 'https://registry.npmjs.org'
         cache: 'yarn'
     - run: yarn install
     - run: yarn audit
