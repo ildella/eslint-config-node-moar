@@ -40,7 +40,7 @@
     "eslint": ">=8.23.0",
     "eslint-plugin-node": ">=11.1.0",
     "eslint-plugin-promise": ">=5.0.0",
-    "eslint-plugin-security": "*",
+    "eslint-plugin-security": ">=1.5.0 <2.0",
     "eslint-plugin-sonarjs": ">=0.5.0"
   }
 }
