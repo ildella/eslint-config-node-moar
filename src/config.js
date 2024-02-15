@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 module.exports = {
   parserOptions: {
-    ecmaVersion: 2022, // syntax only
+    ecmaVersion: 2023, // syntax only
     ecmaFeatures: {
       impliedStrict: true,
       globalReturn: false,
@@ -10,7 +10,7 @@ module.exports = {
     requireConfigFile: false,
   },
   env: {
-    es2022: true, // globals + syntax
+    es2023: true, // globals + syntax
     node: true,
   },
   plugins: [
@@ -49,7 +49,7 @@ module.exports = {
     'max-len': [
       'warn',
       {
-        code: 100,
+        code: 90,
         ignoreComments: false,
         ignoreRegExpLiterals: false,
         ignoreStrings: false,
