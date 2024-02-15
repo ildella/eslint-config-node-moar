@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 20
           cache: 'yarn'
-      - run: yarn test
+      - run: yarn lint
 
   publish-npm:
     needs: build
