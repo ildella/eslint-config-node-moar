@@ -52,7 +52,7 @@ echo "extends: ['node-moar']" > .eslintrc.yml
 
 ## Get... moar :)
 
-Part of the family are: 
+You can enforce a stricter rules and test rules for Jest extending:
 
-  * [test](https://github.com/ildella/eslint-config-node-moar-test) - with linters for [Jest](https://github.com/facebook/)
-  * [stricter](https://github.com/ildella/eslint-config-node-moar-stricter) - stricter lint rules enforced using more plugins
+  * node-moar-stricter
+  * node-moar-test
