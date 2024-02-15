@@ -17,7 +17,9 @@ jobs:
         with:
           node-version: 20
           cache: 'yarn'
+      - run: yarn install --immutable
       - run: yarn lint
+      - run: yarn audit
 
   publish-npm:
     needs: build
@@ -30,6 +32,7 @@ jobs:
           node-version: 20
           cache: 'yarn'
           registry-url: https://registry.npmjs.org/
+      - run: yarn install --immutable
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
