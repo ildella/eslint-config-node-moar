@@ -143,7 +143,7 @@ module.exports = {
     'space-infix-ops': 'warn',
     'space-unary-ops': 'warn',
     'spaced-comment': 'warn',
-    // 'no-extraneous-require': 'error',
+    // 'node/no-extraneous-require': 'error',
     // 'node/no-unpublished-require': 'warn',
     // 'node/no-missing-require': 'error',
     // 'node/shebang': 'off',
